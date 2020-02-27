@@ -34,19 +34,27 @@ public class Board {
 
     public void printBoard(){
         System.out.println();
+        for(int j=0; j<board[0].length; j++){
+            System.out.printf("____", j+1);
+        }
+        System.out.println();
         for(int i=0; i<board.length; i++){
             for(int j=0; j<board[i].length; j++){
                 if(board[i][j] == null){
                     System.out.print("|   ");
                 }
                 else{
-                    System.out.print("| " +board[i][j].getToken() + " ");
+                    System.out.print("|  " +board[i][j].getToken() + " ");
                 }
             }
             System.out.println("|");
         }
-        for(int i = 0; i<board.length-1;i++){
-            System.out.println(" " + i+1 + " ");
+        for(int j=0; j<board[0].length; j++){
+            System.out.printf("____", j+1);
+        }
+        System.out.println();
+        for(int j=0; j<board[0].length; j++){
+            System.out.printf("  %d ", j+1);
         }
         //System.out.println("  1   2   3   4   5   6   7");
     }

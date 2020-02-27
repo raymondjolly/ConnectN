@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Board board = new Board(4, 4);
+        Board board = new Board(7, 10);
 
         board.printBoard();
 //        board.setGamePiece(0, 1);
