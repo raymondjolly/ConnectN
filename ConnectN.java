@@ -29,7 +29,7 @@ public class ConnectN {
      */
     public void playGame(){
 
-        Human player1 = new Human("Jake from State Farm",new Token('R'));
+        Human player1 = new Human("The Human",new Token('R'));
         BotPlayer player2 = new BotPlayer("W.O.P.R", new Token('Y'));
 
 
