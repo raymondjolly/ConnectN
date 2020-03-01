@@ -1,22 +1,17 @@
 package com.rvj;
 
 
-public class Main {
-
+class Main {
     public static void main(String[] args) {
-	// write your code here
-        Board board = new Board(7, 10);
 
-        board.printBoard();
-//        board.setGamePiece(0, 1);
-//        System.out.println(board.getFreeSpaceLeftInColumn(0));
-//        board.printBoard();
-//        System.out.println();
-//        ConnectN connectN = new ConnectN(4,5);
-//        connectN.gameSetup(1);
-//        int count = connectN.getPlayerCount();
-//        System.out.println(count);
-        //connectN.getPlayer(0);
+        //The variables below can be modified to check for different test conditions
+        int connectN = 5;
+        int opponents = 3;
+
+        System.out.println("Welcome to ConnectN");
+
+        ConnectN g = new ConnectN(connectN, opponents);
+        g.playGame();
 
     }
 }
